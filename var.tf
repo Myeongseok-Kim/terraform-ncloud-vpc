@@ -46,6 +46,16 @@ variable "usage_type" {
 
 
 ### NAT Gateway
+variable "enable_ngw" {
+    type    = bool
+    default = true
+}
+
+variable "single_ngw" {
+    type    = bool
+    default = true
+}
+
 variable "ngw_name" {
     type    =   string
     default = "tf-nat-gateway"
