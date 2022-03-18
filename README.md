@@ -1,4 +1,5 @@
 # Usage
+```
 module "vpc" {
 	source = "Myeongseok-Kim/vpc/ncloud"
 
@@ -15,5 +16,5 @@ module "vpc" {
     enable_ngw      =   true
     single_ngw      =   true		                            // if false, Create each in two zones
     ngw_name        =   "tf-ngw"
-
 }
+```
