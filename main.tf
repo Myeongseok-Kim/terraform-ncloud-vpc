@@ -39,15 +39,6 @@ resource "ncloud_nat_gateway" "nat_gateway" {
 
 
 ### Route Table
-# data "ncloud_route_table" "private_route" {
-#   vpc_no                  = ncloud_vpc.vpc.id
-#   supported_subnet_type   = "PRIVATE"
-#   filter {
-#     name = "is_default"
-#     values = ["true"]
-#   }
-# }
-
 resource "ncloud_route_table" "private_route_table" {
     vpc_no                = ncloud_vpc.vpc.id  
     supported_subnet_type = "PRIVATE"

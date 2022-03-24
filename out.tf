@@ -1,17 +1,4 @@
 ### VPC
-# output "vpc_id" {
-#     value = ncloud_vpc.vpc.id
-# }
-# output "vpc_name" {
-#     value = ncloud_vpc.vpc.name
-# }
-# output "vpc_cidr" {
-#     value = ncloud_vpc.vpc.ipv4_cidr_block
-# }
-# output "default_network_acl_no" {
-#     value = ncloud_vpc.vpc.default_network_acl_no
-# }
-
 output "vpc" {
     value = { for key, val in ncloud_vpc.vpc : key => val }
 }
